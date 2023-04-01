@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[44,)"
+license = "The Unlicense <https://unlicense.org>"
+issueTrackerURL = "https://github.com/amuzil/cactus/issues"
+
+[[mods]]
+modId = "cactus"
+version = "${file.jarVersion}"
+displayName = "Cactus Juice"
+updateJSONURL = "https://raw.githubusercontent.com/amuzil/cactus/main/update.json"
+displayURL = "https://curseforge.com/minecraft/mc-mods/cactus"
+logoFile = "banner.png"
+credits = "All the people who have worked on the Avatar universe!"
+authors = "Mahtaran"
+displayTest = "MATCH_VERSION"
+description = '''
+The World's Quenchiest Beverage is Here!
+'''
+
+[[dependencies.cactus]]
+modId = "forge"
+mandatory = true
+versionRange = "[44,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cactus]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.3,1.20)"
+ordering = "NONE"
+side = "BOTH"
